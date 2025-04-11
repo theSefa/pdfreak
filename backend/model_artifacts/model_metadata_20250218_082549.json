@@ -1,0 +1,68 @@
+{
+    "feature_names": [
+        "file_size",
+        "file_entropy",
+        "pdfid_JS",
+        "pdfid_OpenAction",
+        "pdfid_AcroForm",
+        "pdfid_URI",
+        "pdfid_ObjStm",
+        "has_javascript_marker",
+        "has_acroform_marker",
+        "num_streams",
+        "num_objs",
+        "num_urls",
+        "streams_per_object",
+        "encrypted_ratio"
+    ],
+    "n_features": 14,
+    "training_date": "20250218_082549",
+    "metrics": {
+        "roc_auc": 0.9941719883439768,
+        "classification_report": {
+            "0": {
+                "precision": 0.9767441860465116,
+                "recall": 0.9921259842519685,
+                "f1-score": 0.9843749999999999,
+                "support": 127.0
+            },
+            "1": {
+                "precision": 0.992,
+                "recall": 0.9763779527559056,
+                "f1-score": 0.9841269841269842,
+                "support": 127.0
+            },
+            "accuracy": 0.984251968503937,
+            "macro avg": {
+                "precision": 0.9843720930232558,
+                "recall": 0.984251968503937,
+                "f1-score": 0.9842509920634921,
+                "support": 254.0
+            },
+            "weighted avg": {
+                "precision": 0.9843720930232557,
+                "recall": 0.984251968503937,
+                "f1-score": 0.9842509920634921,
+                "support": 254.0
+            }
+        },
+        "confusion_matrix": [
+            [
+                126,
+                1
+            ],
+            [
+                3,
+                124
+            ]
+        ],
+        "best_parameters": {
+            "clf__class_weight": null,
+            "clf__max_depth": null,
+            "clf__min_samples_split": 2,
+            "clf__n_estimators": 100,
+            "feature_selector__threshold": "median"
+        },
+        "cv_score": 0.9803426197563117
+    }
+}

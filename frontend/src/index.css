@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional MetaDefender Cloud-like Theme */
+:root {
+  --color-background: #0d1117; /* Deep cyber dark blue */
+  --color-secondary: #161b22; /* Slightly lighter contrast */
+  --color-accent: #1f6feb; /* Professional blue */
+  --color-text: #e6edf3; /* Light gray text */
+  --color-border: #30363d; /* Soft border color */
+}
+
+.bg-primary { background-color: var(--color-background); }
+.bg-secondary { background-color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.text-muted { color: #8b949e; }
+.border-muted { border-color: var(--color-border); }
+
+@layer components {
+  button {
+    /* Base button styles */
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    outline: none;
+  }
+
+  button:disabled {
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+/* Optional: Add this if you want a subtle active state */
+button:active:not(:disabled) {
+  transform: scale(0.98);
+  transition: transform 0.1s ease-in-out;
+}

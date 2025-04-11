@@ -1,0 +1,81 @@
+{
+    "feature_names": [
+        "file_size",
+        "file_entropy",
+        "pdfid_JS",
+        "pdfid_JavaScript",
+        "pdfid_OpenAction",
+        "pdfid_RichMedia",
+        "pdfid_Launch",
+        "pdfid_EmbeddedFile",
+        "pdfid_XFA",
+        "pdfid_Colors",
+        "pdfid_AcroForm",
+        "pdfid_JBIG2Decode",
+        "pdfid_Page",
+        "pdfid_Encrypt",
+        "pdfid_ObjStm",
+        "pdfid_URI",
+        "has_javascript_marker",
+        "has_acroform_marker",
+        "has_xfa_marker",
+        "num_javascript_markers",
+        "num_acroform_markers",
+        "num_xfa_markers",
+        "num_streams",
+        "num_objs",
+        "num_urls",
+        "streams_per_object",
+        "avg_stream_size",
+        "encrypted_ratio"
+    ],
+    "n_features": 28,
+    "training_date": "20250218_161645",
+    "metrics": {
+        "roc_auc": 0.994047988095976,
+        "classification_report": {
+            "0": {
+                "precision": 0.9769230769230769,
+                "recall": 1.0,
+                "f1-score": 0.9883268482490272,
+                "support": 127.0
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.9763779527559056,
+                "f1-score": 0.9880478087649402,
+                "support": 127.0
+            },
+            "accuracy": 0.9881889763779528,
+            "macro avg": {
+                "precision": 0.9884615384615385,
+                "recall": 0.9881889763779528,
+                "f1-score": 0.9881873285069838,
+                "support": 254.0
+            },
+            "weighted avg": {
+                "precision": 0.9884615384615385,
+                "recall": 0.9881889763779528,
+                "f1-score": 0.9881873285069837,
+                "support": 254.0
+            }
+        },
+        "confusion_matrix": [
+            [
+                127,
+                0
+            ],
+            [
+                3,
+                124
+            ]
+        ],
+        "best_parameters": {
+            "clf__class_weight": "balanced",
+            "clf__max_depth": null,
+            "clf__min_samples_split": 2,
+            "clf__n_estimators": 300
+        },
+        "cv_score": 0.982342049998232
+    }
+}

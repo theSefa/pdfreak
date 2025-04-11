@@ -1,0 +1,86 @@
+{
+    "feature_names": [
+        "file_size",
+        "file_entropy",
+        "pdfid_JS",
+        "pdfid_OpenAction",
+        "pdfid_AA",
+        "pdfid_AcroForm",
+        "pdfid_URI",
+        "pdfid_EmbeddedFile",
+        "pdfid_Launch",
+        "pdfid_ObjStm",
+        "pdfid_output_empty",
+        "has_javascript_marker",
+        "has_acroform_marker",
+        "num_streams",
+        "num_objs",
+        "js_entropy_avg",
+        "contains_eval",
+        "contains_unescape",
+        "contains_document_write",
+        "contains_x_encoding",
+        "contains_base64",
+        "contains_network_calls",
+        "has_shellcode",
+        "num_urls",
+        "has_known_phishing_url",
+        "skipped_due_to_risk",
+        "peepdf_parsed",
+        "suspicious_streams",
+        "object_count",
+        "encrypted_count",
+        "skipped_due_to_timeout",
+        "skipped_due_to_error",
+        "streams_per_object",
+        "encrypted_ratio"
+    ],
+    "n_features": 34,
+    "training_date": "20250220_062542",
+    "metrics": {
+        "roc_auc": 0.9345553117335742,
+        "classification_report": {
+            "0": {
+                "precision": 0.8333333333333334,
+                "recall": 0.9016393442622951,
+                "f1-score": 0.8661417322834646,
+                "support": 122.0
+            },
+            "1": {
+                "precision": 0.8974358974358975,
+                "recall": 0.8267716535433071,
+                "f1-score": 0.8606557377049181,
+                "support": 127.0
+            },
+            "accuracy": 0.8634538152610441,
+            "macro avg": {
+                "precision": 0.8653846153846154,
+                "recall": 0.8642054989028011,
+                "f1-score": 0.8633987349941914,
+                "support": 249.0
+            },
+            "weighted avg": {
+                "precision": 0.8660282154258058,
+                "recall": 0.8634538152610441,
+                "f1-score": 0.8633436547273384,
+                "support": 249.0
+            }
+        },
+        "confusion_matrix": [
+            [
+                110,
+                12
+            ],
+            [
+                22,
+                105
+            ]
+        ],
+        "best_parameters": {
+            "clf__class_weight": null,
+            "clf__max_depth": 10,
+            "clf__n_estimators": 200
+        },
+        "cv_score": 0.8852536239315476
+    }
+}

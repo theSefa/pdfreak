@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node.js / Vite
+node_modules/
+dist/
+.vite/
+
+# OS + editor
+.DS_Store
+.env
+.env.local
