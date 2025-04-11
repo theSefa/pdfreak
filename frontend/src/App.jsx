@@ -36,9 +36,10 @@ const App = () => {
           </h1>
 
           <p className="text-gray-300 text-center mt-4 max-w-3xl leading-relaxed">
-            PDFreak AI blends cutting-edge AI and threat intel to detect
-            malicious PDFs with precision. Scan, analyze, and understand hidden
-            threats — instantly.
+            PDFreak AI uses advanced machine learning and threat intelligence to
+            identify malicious PDFs with speed and accuracy. Built as a File
+            Risk Evaluation & Analysis Kit (FREAK), it empowers teams to scan,
+            analyze, and understand hidden threats — instantly.
           </p>
         </div>
 
